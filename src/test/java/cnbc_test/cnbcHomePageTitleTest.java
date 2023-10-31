@@ -15,7 +15,7 @@ public class cnbcHomePageTitleTest {
         driver.get("https://www.cnbc.com/");
         driver.manage().window().maximize();
         String pageTitle = driver.getTitle();
-        System.out.println("The Home Page Title for CNBC Website is: " + pageTitle);
+        System.out.println("The Home Page Title for the  Website is: " + pageTitle);
         driver.close();
 
     }

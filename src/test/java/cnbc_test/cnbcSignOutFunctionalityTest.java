@@ -17,7 +17,7 @@ public class cnbcSignOutFunctionalityTest {
         driver.findElement(By.xpath("//div[@class='SignInMenu-signInMenu']")).click();
         driver.findElement(By.name("email")).sendKeys("hasannibir54@gmail.com");
         driver.findElement(By.name("password")).sendKeys("Cnbc@123");
-        driver.findElement(By.xpath("//span[@class='Checkboxes-checkmark']")).click();
+        //driver.findElement(By.xpath("//span[@class='Checkboxes-checkmark']")).click();
         Thread.sleep(4000);
         driver.findElement(By.name("signin")).click();
         Thread.sleep(5000);

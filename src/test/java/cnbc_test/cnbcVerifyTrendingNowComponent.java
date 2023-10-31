@@ -19,7 +19,7 @@ public class cnbcVerifyTrendingNowComponent {
         Assert.assertEquals(trendingNowHeader, "TRENDING NOW");
         System.out.println("The Trending now Header Text is: " + trendingNowHeader);
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//a[@class='TrendingNowItem-title'][contains(text(),'The secret life of Jimmy Zhong, who stole – and lo')]")).click();
+        driver.findElement(By.xpath("//a[@class='TrendingNowItem-title'][contains(text(),'Israel vows to step up Gaza bombardment ahead of e')]")).click();
         Thread.sleep(3000);
         String trendingNowFirstUrl = driver.getCurrentUrl();
         System.out.println("The first Story URL Of trending now section is: " + trendingNowFirstUrl);
