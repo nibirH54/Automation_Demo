@@ -19,6 +19,7 @@ public class cnbcVerifyTravelInsurancePageUrl {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).build().perform();
         driver.findElement(By.xpath("//p[normalize-space()='Insurance']")).click();
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//p[normalize-space()='Travel Insurance']")).click();
         Thread.sleep(4000);
         String travelInsurancePageUrl = driver.getCurrentUrl();
