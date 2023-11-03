@@ -18,6 +18,7 @@ public class cnbcVerifyTravelInsurancePageUrl {
         WebElement element = driver.findElement(By.xpath("//button[@class='EditionMenu-featuredMenuButton']"));
         Actions actions = new Actions(driver);
         actions.moveToElement(element).build().perform();
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//p[normalize-space()='Insurance']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//p[normalize-space()='Travel Insurance']")).click();
