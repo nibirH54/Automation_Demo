@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class cnbcSignInFunctionalityTest {
 
-    WebDriver driver = new ChromeDriver();
+    WebDriver driver = new FirefoxDriver();
 
     @Test
     public void signInFunctionalityTest() throws InterruptedException {
