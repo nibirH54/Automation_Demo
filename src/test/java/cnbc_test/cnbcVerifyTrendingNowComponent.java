@@ -19,8 +19,7 @@ public class cnbcVerifyTrendingNowComponent {
         Assert.assertEquals(trendingNowHeader, "TRENDING NOW");
         System.out.println("The Trending now Header Text is: " + trendingNowHeader);
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//a[@class='TrendingNowItem-title'][contains(text(),'Sam Bankman-Fried found guilty on all seven crimin')]")).click();
-        Thread.sleep(3000);
+        driver.findElement(By.xpath("//div[@class='PageBuilder-col-12 PageBuilder-col']//li[1]")).click();
         String trendingNowFirstUrl = driver.getCurrentUrl();
         System.out.println("The first Story URL Of trending now section is: " + trendingNowFirstUrl);
         driver.close();
